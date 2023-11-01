@@ -18,7 +18,18 @@ footer {
 }
 main {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 main img {
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
+    h1 {
+        color: red;
+    }
 }
