@@ -7,5 +7,28 @@
 </head>
 <body>
     <h1>Learn JS part 3</h1>
+
+    <script>
+    const student = {
+    Name:"Elizabeth",
+    NIM:"2282034", 
+    Major:"SISTEM INFORMASI",
+    Religion:"ADVENT", 
+    Adrress:"UNIVERSITAS ADVENT INDONESIA"
+}
+    </script>
+
+    <p>Name: <script>document.write(student.Name)</script></p>
+    <p>NIM: <span id="NIM"</span></p>
+    <p>Major: <span id="Major"</span></p>
+    <p>Religion: <span id="Religion"</span></p>
+    <p>Address: <span id="Adrress"</span></p>
+
+        <script>
+            document.getElementById("NIM").innerHTML = student.NIM;
+            document.getElementById("Major").innerHTML = student.Major;
+            document.getElementById("Religion").innerHTML = student.Religion;
+            document.getElementById("Adrress").innerHTML = student.Adrress;
+        </script>
 </body>
 </html>
