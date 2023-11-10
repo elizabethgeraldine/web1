@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn JS part 2</title>
+    <title>Learn JS 2</title>
 </head>
 <body>
     <h1>Learn JS part 2</h1>
+    
     <script>
         function myElizabeth() {
-            document.write("Hi, I'm  Elizabeth");
+                document.write("Hi, I'm Elizabeth");
         }
 
         myElizabeth();
+
         function myFriend() {
-            document.write ("My friend is Iren")
+            document.write( "<br> My Friend is Iren");
+            document.write("Hi, I'm  Elizabeth");
         }
 
         myFriend();
-        document.write("<br><br>");
+
         function myFriendAndMe() {
             myFriend();
             document.write("<br>");
-            myElizabeth();
+            myElizabeeth();
         }
 
         myFriendAndMe();
@@ -33,11 +36,10 @@
         function add(a, b) {
             return a + b;
         }
-
+        document.write("<br>")
         document.write(add(2, 3));
-
+        
         console.log(add(1, 3));
-
         console.log(add(x, y));
 
         function multiply(x, y) {
@@ -46,44 +48,22 @@
 
         console.log(multiply(4, 5));
 
-
-        let b = 2;
-        let c = 5;
-
-        function add(b, c) {
-            return b + c;
+        function dad(a, b, c, d) {
+            return a + b * c - d;
         }
-
-        document.write(add(1, 2));
-
-        console.log(add(2, 3));
-
-        console.log(add(b, c));
-
-        console.log(add(2, 2));
-
-        console.log(add(1, 1));
-
-        console.log(add(5, 3));
-
-        function multiply(b, c) {
-            return b * c;
-        }
-
-        console.log(multiply(4, 5));
+        document.write("<br>");
+        document.write(dad(5, 10, 10, 7));
     </script>
+    <h1>Type your name</h1>
 
-    <br><br>
-    <h3>Type your name</h3>
     Name: <input type="text" id="name">
     <button onclick="showName()">Send</button>
-
     <p id="np"></p>
 
     <script>
         function showName() {
-            let name = document.getElemenById("name").value;
-            document.getElementById("np").innerHTML = "Your name is " + name;
+            let name = document.getElementById("name").value;
+            document.getElementById("np").innerHTML = "Your Name is " + name;
         }
     </script>
 
