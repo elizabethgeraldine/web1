@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn JS  part 4</title>
 </head>
-<body>
+<body onload="functionload()">
     
     <h1>Learn JS part 4</h1>
     <!--onlcik event-->
@@ -33,6 +33,10 @@
         function functionkeydown() {
             console.log("You pressed a key");
             document.getElementById("name").style.borderColor = "red";
+        }
+
+        function functionload() {
+            alert("Hi, This is my website");
         }
 
     </script>
