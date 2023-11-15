@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let email = document.forms["myForm"]["email"].value;
+  let username = document.forms["myForm"]["username"].value;
+  let password = document.forms["myForm"]["password"].value;
+  let Gender = document.forms["myForm"]["gender"].value;
+  let Select Religion = document.forms["myForm"]["select religion"].value;
+  let Address = document.forms["myForm"]["address"].value;
+  
+if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (email == "") {
+    alert("Email must be filled out");
+    return false;
+}
+if (username == "") {
+    alert("Username must be filled out");
+    return false;
+}
+if (password == "") {
+    alert("Password must be filled out");
+    return false;
+}
+if (gender == "") {
+    alert("Gender must be filled out");
+    return false;
+}
+if (Select Religion == "") {
+    alert("Select Religion must be filled out");
+    return false;
+}
+if (Address == "") {
+    alert("Address must be filled out");
+    return false;
+}
+
+}
+</script>
+</head>
+<body>
+    
+
+<h2>Contact Us</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Full Name: <input type="text" name="fname"><br><br>
+  E-mail :   <input type="text" name="e-mail"><br><br>
+  Username :   <input type="text" name="username"><br><br>
+  Password :   <input type="text" name="password"><br><br>
+  Gender   :    <input  type="radio" id name="Male"><label for="gender">Male</label><input  type="radio" id="Female"><label for="gender">Female</label><br>
+  <form action="proses.php" method="get">
+      <p>Religion
+	  <select name=' Select Religion'>
+		<option value='Select Religion'>Select Religion</option>
+		<option value='kristen'>Kristen</option>
+		<option value='katholik'>Katholik</option>
+		<option value='hindu'>Hindu</option>
+		<option value='kristen'>Budha</option>
+	  </select>
+	  </p>
+      <form action="proses.php" method="get">
+      <p>Address</p>
+      <p><textarea name="alamat" rows="10" cols="100"></textarea>
+      </p>
+</form>
+    Hobbies   :   <input  type="checkbox" id="Reading"><label for="hobbies">Reading</label>
+                  <input  type="checkbox" id="Sports"><label for="hobbies">Sports</label>
+                  <input  type="checkbox" id="Music"><label for="hobbies">Music</label><br><br>
+                  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
