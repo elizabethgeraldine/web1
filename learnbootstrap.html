@@ -11,11 +11,37 @@
     <title>Learn Bootstrap</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
      <div class="row">
-        <div>Left</div>
-        <div>Center</div>
-        <div>Right</div>
+        <div class="col-sm-2 bg-light text-primary">Left</div>
+        <div class="col-sm-8 bg-warning text-succes">
+            <p class="h1 text-uppercase">Welcome</p>
+           <p class="display-1">Display Text 1</p>
+
+           <table class="table table-striped">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+            <tr class="table-success">
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@unai.edu</td>
+            </tr>
+            <tr>
+                <td>Marry</td>
+                <td>Moe</td>
+                <td>mary@unai.edu</td>
+            </tr>
+            <tr class="table-danger">
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@unai.edu</td>
+            </tr>
+           </table>
+        </div>
+        <div class="col-sm-2 bg-info text-danger">Right</div>
         </div>
     </div>
 </body>
